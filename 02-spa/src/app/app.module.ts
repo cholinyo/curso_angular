@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
 // Rutas
-import {AppRoutingModule} from './app.routes';
+import { APP_ROUTING } from './app.routes';
 
 // Servicios
-import { HeroesService } from './services/heroes.service';
-
+import { HeroesService } from './servicios/heroes.service';
 
 // Componentes
 import { AppComponent } from './app.component';
@@ -14,6 +16,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +26,18 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     HomeComponent,
     AboutComponent,
     HeroesComponent,
-    HeroeComponent
+    HeroeComponent,
+    BuscadorComponent,
+    HeroeTarjetaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpModule,
+    APP_ROUTING
   ],
   providers: [
-    HeroesService,
+    HeroesService
   ],
   bootstrap: [AppComponent]
 })
