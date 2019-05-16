@@ -1,10 +1,7 @@
 {
 	"folders": [
 		{
-			"path": "01-hola-mundo"
-		},
-		{
-			"path": "02-spa"
+			"path": "04-spotiapp"
 		}
 	],
 	"settings": {}
