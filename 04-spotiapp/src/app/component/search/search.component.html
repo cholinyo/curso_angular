@@ -3,3 +3,12 @@
     <input type="text" #artista class="form-control" (keyup)="buscar(artista.value)" placeholder="buscar artista"/>
   </div>
 </div>
+
+<div class="card-columns">
+    <div *ngFor="let artista of artistas" class="card">
+        <img class="card-img-top" [src]='artista.images[0].url' alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"> {{ artista.name }}</h5>
+        </div>
+    </div>
+</div>

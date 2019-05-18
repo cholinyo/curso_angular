@@ -12,7 +12,7 @@ export class SpotifyService {
 
   getNewReleases(){
     const headers = new HttpHeaders({
-      'Authorization': 'Bearer BQDAoDvMNwyIpuFkoRa0iMqtWD8WQPbNghd556dPXD40diE1f79f-G0cJZDTbbsKfL1HIuO75cj02K5LU68'
+      'Authorization': 'Bearer BQDj6B2QYb9f-L3Z15s_rK1PlDhbGGfLBukrgk4aVzzd7JGghqhVv2FWe8aICuODnL_m7YMvYLD01_wH6AA'
     })
     return this.http.get('https://api.spotify.com/v1/browse/new-releases', {headers})
 
@@ -20,9 +20,9 @@ export class SpotifyService {
 
   getArtista(artista:string) {
     const headers = new HttpHeaders({
-      'Authorization': 'Bearer BQDAoDvMNwyIpuFkoRa0iMqtWD8WQPbNghd556dPXD40diE1f79f-G0cJZDTbbsKfL1HIuO75cj02K5LU68'
+      'Authorization': 'Bearer BQDj6B2QYb9f-L3Z15s_rK1PlDhbGGfLBukrgk4aVzzd7JGghqhVv2FWe8aICuODnL_m7YMvYLD01_wH6AA'
     });
-    return this.http.get(`https://api.spotify.com/v1/search?q=${artista}`, {headers});
+    return this.http.get(`https://api.spotify.com/v1/search?q=${artista}&type=artist&limit=15`, {headers});
 
   }
 
