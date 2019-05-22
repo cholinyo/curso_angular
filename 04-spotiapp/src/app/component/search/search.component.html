@@ -1,7 +1,7 @@
-<div class="row>
+<div class="row">
   <div class="col">
     <input type="text" #artista class="form-control" (keyup)="buscar(artista.value)" placeholder="buscar artista"/>
   </div>
 </div>
-
-<app-tarjetas [items]="artistas"></app-tarjetas>
+<app-loading *ngIf="loading"></app-loading>
+<app-tarjetas *ngIf="!loading" [items]="artistas"></app-tarjetas>

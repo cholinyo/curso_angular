@@ -9,11 +9,12 @@ import { HomeComponent } from './component/home/home.component';
 import { SearchComponent } from './component/search/search.component';
 import { ArtistaComponent } from './component/artista/artista.component';
 import { NavbarComponent } from './component/shared/navbar/navbar.component';
+import { LoadingComponent } from './component/shared/loading/loading.component';
 
 import { SpotifyService } from './services/spotify.service';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { TarjetasComponent } from './component/tarjetas/tarjetas.component';
-import { LoadingComponent } from './component/share/loading/loading.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { LoadingComponent } from './component/share/loading/loading.component';
     NavbarComponent,
     NoimagePipe,
     TarjetasComponent,
-    LoadingComponent
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
