@@ -11,6 +11,9 @@ import { ArtistaComponent } from './component/artista/artista.component';
 import { NavbarComponent } from './component/shared/navbar/navbar.component';
 
 import { SpotifyService } from './services/spotify.service';
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { TarjetasComponent } from './component/tarjetas/tarjetas.component';
+import { LoadingComponent } from './component/share/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { SpotifyService } from './services/spotify.service';
     SearchComponent,
     ArtistaComponent,
     NavbarComponent,
+    NoimagePipe,
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
